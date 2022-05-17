@@ -18,3 +18,10 @@ rm -f packages.microsoft.gpg
 apt-get -y install apt-transport-https
 apt update
 apt-get -y install code
+
+echo "Installing go version 18.2"
+wget -c https://golang.org/dl/go1.18.2.linux-amd64.tar.gz
+chmod +x go1.18.2.linux-amd64.tar.gz
+rm -rf /usr/local/go && tar -C /usr/local -xzf go1.18.2.linux-amd64.tar.gz
+echo "export PATH=$PATH:/usr/local/go/bin">>$HOME/.profile
+source $HOME/.profile
