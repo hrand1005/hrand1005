@@ -29,3 +29,6 @@ rm go1.18.2.linux-amd64.tar.gz
 
 echo "\nInstalling build-essential"
 apt install --reinstall build-essential
+
+echo "\nInstalling i3"
+apt-get -y install i3
