@@ -24,7 +24,6 @@ wget -c https://golang.org/dl/go1.18.2.linux-amd64.tar.gz
 chmod +x go1.18.2.linux-amd64.tar.gz
 rm -rf /usr/local/go && tar -C /usr/local -xzf go1.18.2.linux-amd64.tar.gz
 echo "export PATH=$PATH:/usr/local/go/bin">>$HOME/.profile
-source $HOME/.profile
 rm go1.18.2.linux-amd64.tar.gz
 
 echo "\nInstalling build-essential"
@@ -35,3 +34,10 @@ apt-get -y install i3
 
 echo "\nInstalling feh"
 apt install feh -y
+
+echo "\nMapping caps-lock to escape"
+echo "export PATH=$PATH:/usr/local/go/bin">>$HOME/.profile
+setxkbmap -layout us -option caps:escape
+
+echo "\nSource .profile"
+source $HOME/.profile
