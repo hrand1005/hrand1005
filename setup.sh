@@ -32,3 +32,6 @@ apt install --reinstall build-essential
 
 echo "\nInstalling i3"
 apt-get -y install i3
+
+echo "\nInstalling feh"
+apt install feh -y
