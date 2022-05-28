@@ -3,8 +3,13 @@ echo "\nupdate and upgrade"
 apt update
 apt upgrade 
 
-echo "\nInstalling vim..."
+echo "\nInstall and setup vim..."
 apt-get -y install vim
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+cp .vimrc $HOME/.vimrc
+vim +'PlugInstall -sync' +qa
+vim +'source ~/.vimrc' +qa
 
 echo "\nInstalling git..."
 apt-get -y install git
