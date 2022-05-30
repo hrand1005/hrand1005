@@ -24,9 +24,15 @@ set wildmenu
 set wildmode=list:longest
 set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx 
 
+" hopefully this will make things faster
+set timeout ttimeout
+set timeoutlen=500
+set ttimeoutlen=20
+
 " plugins
 call plug#begin('~/.vim/plugged')
 Plug 'morhetz/gruvbox'
+Plug 'townk/vim-autoclose'
 call plug#end()
 
 autocmd vimenter * ++nested colorscheme

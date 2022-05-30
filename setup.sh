@@ -37,6 +37,9 @@ apt install --reinstall build-essential
 echo "\nInstalling i3"
 apt-get -y install i3
 
+echo "\nInstalling tmux"
+apt-get -y install tmux
+
 echo "\nInstalling feh"
 apt install feh -y
 
