@@ -1,4 +1,6 @@
-# Herbie Rand
+## Herbie Rand
+[![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/herbie-rand-a863851a0) [![Website](https://img.shields.io/badge/Website-100000?style=for-the-badge&logo=github&logoColor=white)](https://hrand1005.github.io/)
+
 
 <a href="https://github.com/hrand1005/github-readme-stats">
     <img align="center" src="https://github-readme-stats.vercel.app/api?username=hrand1005&show_icons=true&hide_border=true&count_private=true&include_all_commits=true" />
